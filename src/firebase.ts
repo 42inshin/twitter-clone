@@ -5,12 +5,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCq9HJFnJ-_bHwF04GWDP6iUSFTjI2prhw",
-  authDomain: "twitter-fb4a1.firebaseapp.com",
-  projectId: "twitter-fb4a1",
-  storageBucket: "twitter-fb4a1.appspot.com",
-  messagingSenderId: "586543851731",
-  appId: "1:586543851731:web:2441cecfcde11129c58c26",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
